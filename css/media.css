@@ -1,0 +1,64 @@
+@media screen and (min-width: 479px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+      "item1 item1"
+      "item2 item2"
+      "item3 item4"
+      "item5 item5"
+      "item6 item8"
+      "item7 item8"
+      "item9 item9"
+      "item10 item10";
+  }
+  .grid .item1 p {
+    font-size: 35px;
+  }
+  .grid .item2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .grid .item2 .caption {
+    width: 32%;
+  }
+  .grid .item5 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-bottom: 0;
+  }
+  .grid .item5 .caption1 {
+    width: 50%;
+    margin: 0;
+  }
+  .grid .item5 .caption2 {
+    width: 40%;
+  }
+  .grid .item7 {
+    justify-content: space-between;
+  }
+  .grid .item10 {
+    flex-direction: row;
+    text-align: left;
+  }
+  .grid .item10 h3 {
+    width: 34%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas:
+      "item2 item2 item1 item1"
+      "item3 item5 item5 item8"
+      "item4 item7 item7 item8"
+      "item6 item9 item10 item10";
+  }
+  .grid .item1 p {
+    max-width: 550px;
+    font-size: 48px;
+  }
+}

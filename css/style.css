@@ -1,0 +1,333 @@
+:root {
+  --head-color: #9fa3a7;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--head-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+h2 {
+  color: var(--head-color);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
+  margin: 0;
+  font-weight: 400;
+}
+h3 {
+  margin: 10px 0 20px;
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+}
+a.pointer {
+  color: #ffc80a;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2.4px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.mini-titel {
+  background-color: #fa684f;
+  width: fit-content;
+  padding: 0 10px;
+  line-height: 20px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.grid .item1 {
+  text-align: center;
+  background-color: #f7f8f9;
+  overflow: auto;
+  padding: 50px 0;
+  grid-area: item1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid .item1 p {
+  font-family: "Arvo", serif;
+  font-size: 10vw; /* ----media */
+  margin: 20px 0 10px;
+  line-height: 1.4em;
+  color: #333333;
+}
+.grid .item1 a {
+  font-family: "Open Sans", sans-serif;
+  color: #27b9c2;
+}
+.grid .item2 {
+  padding: 40px 4% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: item2;
+}
+.grid .item2 .caption {
+  width: 90%;
+}
+.grid .item2 h3 {
+  font-size: 22px;
+}
+.grid .item2 .iphone-ima img {
+  width: 249px;
+  position: relative;
+  left: -4%;
+  margin: 40px 4% 0;
+}
+.grid .item3 {
+  padding: 40px 0;
+  background-color: #f05638;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: item3;
+}
+.grid .item3 .keyboard-img {
+  width: 93%;
+}
+.grid .item3 h3 {
+  color: white;
+  font-weight: bold;
+  max-width: 100%;
+  margin: 10px 0 0;
+}
+.grid .item4 {
+  padding: 30px 0;
+  background-color: #f7f8f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: item4;
+}
+.grid .item4 img {
+  width: 248px;
+}
+.grid .item4 .dualshock-img {
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  left: -7%;
+}
+.grid .item4 h3 {
+  width: 54%;
+  text-align: center;
+  color: #333333;
+}
+.grid .item4 a {
+  color: #27b9c2;
+}
+.grid .item5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 68px 4% 50px; /* ----media */
+  grid-area: item5;
+}
+.grid .item5 .desk-top-img {
+  width: 200%;
+  position: relative;
+  left: -115%;
+  margin-top: 40px;
+} /* ----media */
+.grid .item5 .caption1 {
+  margin-bottom: 43px;
+  max-width: 180px;
+} /* ----media */
+.grid .item5 a {
+  display: block;
+  margin-top: 20px;
+  color: #27b9c2;
+}
+.grid .item6 {
+  background-color: #38d5f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: item6;
+}
+.grid .item6 .caption {
+  background-color: #35cfed;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.grid .item6 .caption img {
+  width: 44px;
+}
+.grid .item6 .caption h3 {
+  width: 172px;
+  color: white;
+}
+.grid .item7 {
+  position: relative;
+  padding-top: 30px;
+  background-color: #93b6b7;
+  background-image: url(../images/ux-background.png);
+  background-position: 50% 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  grid-area: item7;
+  display: flex;
+  flex-direction: column;
+}
+.grid .item7 h3 {
+  color: white;
+  font-weight: bold;
+  width: 280px;
+  margin: auto 0;
+  padding: 31px 0;
+  text-align: center;
+  align-self: center;
+}
+.grid .item7 img {
+  width: 90%;
+  position: relative;
+  left: -7%;
+}
+.grid .item8 {
+  background-color: #8f76bc;
+  color: white;
+  padding: 30px 5% 70px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: item8;
+}
+.grid .item8 .mid-titel {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 2px 13px 1px 30px;
+  border-radius: 60px;
+  background-image: url(../images/flag-background.png);
+  background-repeat: no-repeat;
+  background-position: 11px 50%;
+  background-size: 12px;
+}
+.grid .item8 .mid-titel h1 {
+  color: white;
+  line-height: 23px;
+  font-size: 10px;
+  letter-spacing: 2.4px;
+}
+.grid .item8 .caption1 {
+  background-color: #8166b0;
+  width: 373px;
+  height: 373px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid .item8 .caption1 img {
+  width: 239px;
+  padding-top: 20px;
+}
+.grid .item8 .caption1 h1 {
+  color: white;
+}
+.grid .item8 .caption2 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid .item8 .caption2 h3 {
+  font-size: 32px;
+  line-height: 36px;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+.grid .item8 .caption2 h2 {
+  color: white;
+  text-align: center;
+}
+.grid .item8 .caption2 a {
+  margin-top: 30px;
+  background-color: #ffc80a;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+}
+.grid .item8 .caption2 h1 {
+  color: black;
+  letter-spacing: 2.4px;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
+}
+.grid .item9 {
+  position: relative;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-area: item9;
+}
+.grid .item9 .mini-titel {
+  background-color: #7bc424;
+  position: static;
+}
+.grid .item9 h3 {
+  width: 70%;
+}
+.grid .item10 {
+  padding: 0 5% 30px;
+  text-align: center;
+  background-color: #2c2c2c;
+  display: flex;
+  flex-direction: column; /* ----media */
+  justify-content: center;
+  align-items: center;
+  grid-area: item10;
+}
+.grid .item10 img {
+  width: 271px;
+  position: relative;
+  left: -15%;
+  margin-bottom: -7%;
+}
+.grid .item10 h3 {
+  color: white;
+}
